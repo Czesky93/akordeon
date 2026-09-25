@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akordeon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Accordion Tutor</p>
+        <h1>Akordeon</h1>
+        <p class="subtitle">
+          Interaktywny przewodnik z sekcjami, które rozwijają się na żądanie.
+        </p>
+      </section>
+
+      <section class="accordion" aria-label="Sekcje informacyjne">
+        <article class="accordion-item is-open">
+          <button class="accordion-trigger" type="button" aria-expanded="true">
+            <span>1. Czym jest Akordeon?</span>
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Akordeon to element interfejsu, który pozwala ukryć i pokazywać treść
+              w zależności od potrzeby użytkownika. Działa świetnie w FAQ, kursach,
+              dokumentacji lub panelach edukacyjnych.
+            </p>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>2. Dlaczego warto go używać?</span>
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Pozwala zachować porządek na stronie, ograniczyć ilość widocznych treści
+              i poprawić czytelność. Użytkownik widzi tylko to, co aktualnie potrzebuje.
+            </p>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>3. Gdzie sprawdza się najlepiej?</span>
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Idealnie nadaje się do sekcji FAQ, instrukcji krok po kroku, opisu
+              funkcji w aplikacjach, a także do materiałów edukacyjnych i samouczków.
+            </p>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>4. Jak go rozbudować?</span>
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Możesz dodać ikony, animacje, dynamiczne dane z API, a nawet wielopoziomowe
+              sekcje. To świetna baza do coraz bardziej zaawansowanych interfejsów.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

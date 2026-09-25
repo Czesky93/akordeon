@@ -1,0 +1,33 @@
+const items = document.querySelectorAll('.accordion-item');
+
+items.forEach((item) => {
+  const trigger = item.querySelector('.accordion-trigger');
+
+  trigger.addEventListener('click', () => {
+    const isOpen = item.classList.contains('is-open');
+
+    items.forEach((entry) => {
+      entry.classList.remove('is-open');
+      entry.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isOpen) {
+      item.classList.add('is-open');
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+items.forEach((item) => {
+  const trigger = item.querySelector('.accordion-trigger');
+  trigger.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      trigger.click();
+    }
+  });
+});
+
+// Ensure un-opened items start closed; the first is kept open in markup for initial state.
+
+// End of script
