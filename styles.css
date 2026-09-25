@@ -3,73 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akordeon</title>
+    <title>Akordeon Tutor</title>
+    <meta
+      name="description"
+      content="Akordeon Tutor — profesjonalny przewodnik do nauki gry na akordeonie z interaktywnym systemem akordeonowym."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
     <main class="page-shell">
-      <section class="hero">
-        <p class="eyebrow">Accordion Tutor</p>
-        <h1>Akordeon</h1>
+      <header class="hero">
+        <div class="brand-row">
+          <span class="brand-dot"></span>
+          <span class="brand-label">Accordion Tutor</span>
+        </div>
+
+        <h1>Nauka gry na akordeonie</h1>
         <p class="subtitle">
-          Interaktywny przewodnik z sekcjami, które rozwijają się na żądanie.
+          Rozbudowany przewodnik edukacyjny z sekcjami ćwiczeniowymi, rytmicznymi i
+          technicznymi, przygotowany w przejrzystym układzie typu accordion.
         </p>
+
+        <div class="hero-metrics" aria-label="Najważniejsze statystyki nauki">
+          <div class="metric">
+            <strong>12</strong>
+            <span>lekcji</span>
+          </div>
+          <div class="metric">
+            <strong>05</strong>
+            <span>modułów</span>
+          </div>
+          <div class="metric">
+            <strong>∞</strong>
+            <span>postęp</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="progress-panel" aria-label="Plan nauki">
+        <div class="panel-head">
+          <span class="eyebrow">Plan dnia</span>
+          <span class="status-pill">15–20 min</span>
+        </div>
+        <div class="progress-grid">
+          <div>
+            <span class="mini-label">Rozgrzewka</span>
+            <strong>5 min</strong>
+          </div>
+          <div>
+            <span class="mini-label">Technika</span>
+            <strong>8 min</strong>
+          </div>
+          <div>
+            <span class="mini-label">Rytm</span>
+            <strong>5 min</strong>
+          </div>
+        </div>
       </section>
 
-      <section class="accordion" aria-label="Sekcje informacyjne">
+      <section class="accordion" aria-label="Sekcje nauki gry na akordeonie">
         <article class="accordion-item is-open">
           <button class="accordion-trigger" type="button" aria-expanded="true">
-            <span>1. Czym jest Akordeon?</span>
+            <span class="trigger-main">
+              <span class="trigger-index">01</span>
+              <span>Podstawy gry</span>
+            </span>
             <span class="icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-content">
-            <p>
-              Akordeon to element interfejsu, który pozwala ukryć i pokazywać treść
-              w zależności od potrzeby użytkownika. Działa świetnie w FAQ, kursach,
-              dokumentacji lub panelach edukacyjnych.
-            </p>
+            <div class="content-inner">
+              <p>
+                Rozpocznij od właściwej postawy, swobodnego siedzenia i ułożenia rąk.
+                Dobrze ustawiony akordeon pozwala lepiej kontrolować dźwięk, ułatwia
+                pracę z akordami i zwiększa komfort podczas gry.
+              </p>
+              <ul>
+                <li>prawidłowa postawa ciała i oddech</li>
+                <li>rozgrzewka palców oraz nadgarstków</li>
+                <li>pierwsze ćwiczenia dźwięku i prostych fraz</li>
+              </ul>
+            </div>
           </div>
         </article>
 
         <article class="accordion-item">
           <button class="accordion-trigger" type="button" aria-expanded="false">
-            <span>2. Dlaczego warto go używać?</span>
+            <span class="trigger-main">
+              <span class="trigger-index">02</span>
+              <span>Technika palców</span>
+            </span>
             <span class="icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-content">
-            <p>
-              Pozwala zachować porządek na stronie, ograniczyć ilość widocznych treści
-              i poprawić czytelność. Użytkownik widzi tylko to, co aktualnie potrzebuje.
-            </p>
+            <div class="content-inner">
+              <p>
+                Regularna praca nad techniką pozwala zbudować precyzję, płynność i pewność
+                ruchu. Należy ćwiczyć małe fragmenty, bez napięcia, z pełnym kontrolowaniem
+                każdego dźwięku.
+              </p>
+              <ul>
+                <li>gra w małych interwałach i prostych motywach</li>
+                <li>redukcja napięcia i poprawa koordynacji</li>
+                <li>stopniowe wydłużanie fraz melodycznych</li>
+              </ul>
+            </div>
           </div>
         </article>
 
         <article class="accordion-item">
           <button class="accordion-trigger" type="button" aria-expanded="false">
-            <span>3. Gdzie sprawdza się najlepiej?</span>
+            <span class="trigger-main">
+              <span class="trigger-index">03</span>
+              <span>Akordy i harmonizacja</span>
+            </span>
             <span class="icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-content">
-            <p>
-              Idealnie nadaje się do sekcji FAQ, instrukcji krok po kroku, opisu
-              funkcji w aplikacjach, a także do materiałów edukacyjnych i samouczków.
-            </p>
+            <div class="content-inner">
+              <p>
+                Nauka akordów umożliwia tworzenie prostych harmonii i akompaniamentu. Ważne
+                jest praktykowanie zmian bez szarpania, z zachowaniem równowagi i spokoju w rękach.
+              </p>
+              <ul>
+                <li>podstawowe akordy major i minor</li>
+                <li>proste progresje harmoniczne</li>
+                <li>zmiany akordów w rytmie i bez pośpiechu</li>
+              </ul>
+            </div>
           </div>
         </article>
 
         <article class="accordion-item">
           <button class="accordion-trigger" type="button" aria-expanded="false">
-            <span>4. Jak go rozbudować?</span>
+            <span class="trigger-main">
+              <span class="trigger-index">04</span>
+              <span>Rytm i koordynacja</span>
+            </span>
             <span class="icon" aria-hidden="true">+</span>
           </button>
           <div class="accordion-content">
-            <p>
-              Możesz dodać ikony, animacje, dynamiczne dane z API, a nawet wielopoziomowe
-              sekcje. To świetna baza do coraz bardziej zaawansowanych interfejsów.
-            </p>
+            <div class="content-inner">
+              <p>
+                Rytm daje muzyce strukturę i energię. Praca z metronomem pomaga utrwalić
+                pulsy, poprawić wyczucie czasu i lepiej zgrać melodyjkę z akompaniamentem.
+              </p>
+              <ul>
+                <li>ćwiczenia z metronomem</li>
+                <li>czytanie prostych wzorców rytmicznych</li>
+                <li>łączenie melodii z towarzyszeniem</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span class="trigger-main">
+              <span class="trigger-index">05</span>
+              <span>Plan ćwiczeń</span>
+            </span>
+            <span class="icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="content-inner">
+              <p>
+                Najlepszy postęp daje regularność i prostota. Wystarczy krótka, celowana sesja
+                każdego dnia, aby zbudować trwałe nawyki i zwiększyć pewność siebie przy grze.
+              </p>
+              <ul>
+                <li>5 minut rozgrzewki i kontroli oddechu</li>
+                <li>10 minut ćwiczeń technicznych i akordów</li>
+                <li>5 minut pracy nad rytmem i prostym utworem</li>
+              </ul>
+            </div>
           </div>
         </article>
       </section>
